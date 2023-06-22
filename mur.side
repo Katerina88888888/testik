@@ -1,0 +1,520 @@
+{
+  "id": "dc5da69e-d939-4a1c-a203-36a4d552e5a5",
+  "version": "2.0",
+  "name": "mur",
+  "url": "https://idemo.bspb.ru/",
+  "tests": [{
+    "id": "1b79477e-ca82-41a9-8652-cfcba948b1fd",
+    "name": "Untitled",
+    "commands": [{
+      "id": "9682bfc9-8ce3-41b1-9000-9e175f725bf7",
+      "comment": "",
+      "command": "open",
+      "target": "https://idemo.bspb.ru/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05efd169-fe84-4582-ae8a-0b82b0d0f1c2",
+      "comment": "",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-control:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8072f998-f191-4cfe-9174-f01ae5871b59",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-control:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a6a616e-7741-42af-a428-465c4eff48af",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//button[@id='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ef96522-268a-4ef3-ab6b-fda71ea79b26",
+      "comment": "",
+      "command": "click",
+      "target": "id=otp-code",
+      "targets": [
+        ["id=otp-code", "id"],
+        ["name=otpCode", "name"],
+        ["css=#otp-code", "css:finder"],
+        ["xpath=//input[@id='otp-code']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07462cfd-3038-41e4-a163-9422dc25445d",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-otp-button",
+      "targets": [
+        ["id=login-otp-button", "id"],
+        ["css=#login-otp-button", "css:finder"],
+        ["xpath=//button[@id='login-otp-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77e8236c-c00c-444a-a1ee-ea41a71f405b",
+      "comment": "",
+      "command": "click",
+      "target": "id=cards-overview-index",
+      "targets": [
+        ["id=cards-overview-index", "id"],
+        ["css=#cards-overview-index", "css:finder"],
+        ["xpath=//a[contains(text(),'Карты')]", "xpath:link"],
+        ["xpath=//a[@id='cards-overview-index']", "xpath:attributes"],
+        ["xpath=//li[@id='cards']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/cards')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b598905-c0e0-4442-a456-06086fa2f4b5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Туристическая страховка",
+      "targets": [
+        ["linkText=Туристическая страховка", "linkText"],
+        ["css=#vzr-10068 > a", "css:finder"],
+        ["xpath=//div[@id='vzr-10068']/a", "xpath:idRelative"],
+        ["xpath=//div[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Туристическая страховка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da90ab96-7eb5-4d32-bbd9-01cf3899a980",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#card-details-ownbank-10068 .card-set-pin > .link-title",
+      "targets": [
+        ["css=#card-details-ownbank-10068 .card-set-pin > .link-title", "css:finder"],
+        ["xpath=//div[@id='card-details-ownbank-10068']/div[2]/div[2]/div[2]/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Изменить ПИН-код')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "615cb227-f55d-4cb3-a7ec-b815aedd7bf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#card-details-ownbank-10068 .card-set-pin > .link-title",
+      "targets": [
+        ["css=#card-details-ownbank-10068 .card-set-pin > .link-title", "css:finder"],
+        ["xpath=//div[@id='card-details-ownbank-10068']/div[2]/div[2]/div[2]/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Изменить ПИН-код')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bedc1f24-d871-4048-b4b0-034c9d749277",
+      "comment": "",
+      "command": "click",
+      "target": "id=pin",
+      "targets": [
+        ["id=pin", "id"],
+        ["css=#pin", "css:finder"],
+        ["xpath=//input[@id='pin']", "xpath:attributes"],
+        ["xpath=//form[@id='set-pin-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9522e38-2b3c-4e7d-bfa8-b8d1472f9b86",
+      "comment": "",
+      "command": "type",
+      "target": "id=pin",
+      "targets": [
+        ["id=pin", "id"],
+        ["css=#pin", "css:finder"],
+        ["xpath=//input[@id='pin']", "xpath:attributes"],
+        ["xpath=//form[@id='set-pin-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "5555"
+    }, {
+      "id": "cd91d5ff-0663-43da-80ce-a7c4e25c63e3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=ПРИГЛАСИТЬ ДРУЗЕЙ",
+      "targets": [
+        ["linkText=ПРИГЛАСИТЬ ДРУЗЕЙ", "linkText"],
+        ["css=.referral-program > a", "css:finder"],
+        ["xpath=//a[contains(text(),'ПРИГЛАСИТЬ ДРУЗЕЙ')]", "xpath:link"],
+        ["xpath=//div[@id='loyalty-programs']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/referral-program')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'ПРИГЛАСИТЬ ДРУЗЕЙ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b573da53-6906-44e1-9f12-3cc377cf7f13",
+      "comment": "",
+      "command": "click",
+      "target": "id=referral-copy-button-1",
+      "targets": [
+        ["id=referral-copy-button-1", "id"],
+        ["linkText=Рекомендовать", "linkText"],
+        ["css=#referral-copy-button-1", "css:finder"],
+        ["xpath=//a[contains(text(),'Рекомендовать')]", "xpath:link"],
+        ["xpath=//a[@id='referral-copy-button-1']", "xpath:attributes"],
+        ["xpath=//div[@id='referral-program-container']/div/div[3]/div/div/div[2]/div[4]/a", "xpath:idRelative"],
+        ["xpath=//div[2]/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Рекомендовать')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fe3c401-6180-439b-ba70-6965cb3a3360",
+      "comment": "",
+      "command": "click",
+      "target": "id=referral-copy-button",
+      "targets": [
+        ["id=referral-copy-button", "id"],
+        ["linkText=Скопировать ссылку", "linkText"],
+        ["css=#referral-copy-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Скопировать ссылку')]", "xpath:link"],
+        ["xpath=//a[@id='referral-copy-button']", "xpath:attributes"],
+        ["xpath=//div[@id='referral-program-container']/div/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Скопировать ссылку')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9685449-62e9-4140-9bfc-21484d5adef7",
+      "comment": "",
+      "command": "click",
+      "target": "id=deposits-index",
+      "targets": [
+        ["id=deposits-index", "id"],
+        ["css=#deposits-index", "css:finder"],
+        ["xpath=//a[contains(text(),'Вклады')]", "xpath:link"],
+        ["xpath=//a[@id='deposits-index']", "xpath:attributes"],
+        ["xpath=//li[@id='deposits']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/deposits')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb4214a3-2c0e-4182-832b-1a75a61dd3fd",
+      "comment": "",
+      "command": "click",
+      "target": "id=loans-index",
+      "targets": [
+        ["id=loans-index", "id"],
+        ["css=#loans-index", "css:finder"],
+        ["xpath=//a[contains(text(),'Кредиты')]", "xpath:link"],
+        ["xpath=//a[@id='loans-index']", "xpath:attributes"],
+        ["xpath=//li[@id='loans']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/loans')]", "xpath:href"],
+        ["xpath=//li[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9f793d2-a45b-453e-bc1c-02f47cffb03e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Перейти к оформлению",
+      "targets": [
+        ["linkText=Перейти к оформлению", "linkText"],
+        ["css=.active:nth-child(1) .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'Перейти к оформлению')]", "xpath:link"],
+        ["xpath=//table[@id='pre-approved-applications']/tbody/tr/td[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/loan-applications/form?applicationRef=loan-with-insurance')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Перейти к оформлению')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba649c1b-434c-4896-82f6-af2f68b9feec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Продолжить",
+      "targets": [
+        ["linkText=Продолжить", "linkText"],
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Продолжить')]", "xpath:link"],
+        ["xpath=//div[@id='contentbar']/div[3]/form/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/loan-applications/details?applicationRef=loan-with-insurance')]", "xpath:href"],
+        ["xpath=//form/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Продолжить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "641511bf-5b1e-443d-81c2-ab0e1dad29f7",
+      "comment": "",
+      "command": "click",
+      "target": "name=repaymentDay",
+      "targets": [
+        ["name=repaymentDay", "name"],
+        ["css=.input-mini", "css:finder"],
+        ["xpath=//select[@name='repaymentDay']", "xpath:attributes"],
+        ["xpath=//div[@id='application-fields']/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4ee6556-9901-44a4-ae7c-0f907f660d47",
+      "comment": "",
+      "command": "select",
+      "target": "name=repaymentDay",
+      "targets": [],
+      "value": "label=15"
+    }, {
+      "id": "c7e08a4e-5a5c-44e8-ae7c-56be634edaa7",
+      "comment": "",
+      "command": "click",
+      "target": "name=serviceAccountId",
+      "targets": [
+        ["name=serviceAccountId", "name"],
+        ["css=.account-select", "css:finder"],
+        ["xpath=//select[@name='serviceAccountId']", "xpath:attributes"],
+        ["xpath=//div[@id='application-fields']/div/div/select", "xpath:idRelative"],
+        ["xpath=//div/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6234e94a-3425-49f6-aedf-e2160964fe49",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions > .btn-primary",
+      "targets": [
+        ["css=.form-actions > .btn-primary", "css:finder"],
+        ["xpath=//div[@id='contentbar']/div[3]/form/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9bd830b-5132-4c6f-adcd-f6765bd4be43",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,500)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e6d525f-0ad4-4452-b452-91124b43affc",
+      "comment": "",
+      "command": "click",
+      "target": "name=condition.personalTerms",
+      "targets": [
+        ["name=condition.personalTerms", "name"],
+        ["css=.conditions-confirmation-block > .control-group:nth-child(1) .immune", "css:finder"],
+        ["xpath=//input[@name='condition.personalTerms']", "xpath:attributes"],
+        ["xpath=//form[@id='application-approve-preview-form']/div/div[13]/div/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24f831f0-1d32-42f6-b9d4-4c9acec1f8a2",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=personal-terms-content",
+      "targets": [
+        ["id=personal-terms-content", "id"],
+        ["css=#personal-terms-content", "css:finder"],
+        ["xpath=//div[@id='personal-terms-content']", "xpath:attributes"],
+        ["xpath=//div[@id='personal-terms-dialog']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "643.796875,543.5"
+    }, {
+      "id": "e62a8225-4d38-4694-b6d7-b5b642e12668",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=personal-terms-content",
+      "targets": [
+        ["id=personal-terms-content", "id"],
+        ["css=#personal-terms-content", "css:finder"],
+        ["xpath=//div[@id='personal-terms-content']", "xpath:attributes"],
+        ["xpath=//div[@id='personal-terms-dialog']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "643.796875,543.5"
+    }, {
+      "id": "91d9613c-468f-4eff-a077-b970a5113fa1",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=personal-terms-content",
+      "targets": [
+        ["id=personal-terms-content", "id"],
+        ["css=#personal-terms-content", "css:finder"],
+        ["xpath=//div[@id='personal-terms-content']", "xpath:attributes"],
+        ["xpath=//div[@id='personal-terms-dialog']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]", "xpath:position"]
+      ],
+      "value": "643.796875,543.5"
+    }, {
+      "id": "0ef29f71-1fff-4a26-bcf1-545cb1343a80",
+      "comment": "",
+      "command": "click",
+      "target": "id=accept-personal-terms-button",
+      "targets": [
+        ["id=accept-personal-terms-button", "id"],
+        ["linkText=Принимаю", "linkText"],
+        ["css=#accept-personal-terms-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Принимаю')]", "xpath:link"],
+        ["xpath=//a[@id='accept-personal-terms-button']", "xpath:attributes"],
+        ["xpath=//div[@id='personal-terms-dialog']/div[3]/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '')])[51]", "xpath:href"],
+        ["xpath=//div[3]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Принимаю')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9bd1d42-45ba-49e0-acc2-1894351a70de",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c3669b-0aa0-44c3-b923-1478f27b7f71",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirm",
+      "targets": [
+        ["id=confirm", "id"],
+        ["css=#confirm", "css:finder"],
+        ["xpath=//button[@id='confirm']", "xpath:attributes"],
+        ["xpath=//form[@id='confirmation-form']/div[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Подтвердить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "586c8782-2b14-415c-8cae-32df6616da42",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "53c9b224-0720-4efa-96d0-11feb2670d9f",
+      "comment": "",
+      "command": "click",
+      "target": "name=condition.insurancePolicy",
+      "targets": [
+        ["name=condition.insurancePolicy", "name"],
+        ["css=.conditions-confirmation-block > .control-group:nth-child(2) .immune", "css:finder"],
+        ["xpath=//input[@name='condition.insurancePolicy']", "xpath:attributes"],
+        ["xpath=//form[@id='application-approve-preview-form']/div/div[13]/div[2]/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d0242af-7736-415d-9dfc-a4b93384fee3",
+      "comment": "",
+      "command": "click",
+      "target": "name=condition.insuranceCondition",
+      "targets": [
+        ["name=condition.insuranceCondition", "name"],
+        ["css=.conditions-confirmation-block > .control-group:nth-child(3) .immune", "css:finder"],
+        ["xpath=//input[@name='condition.insuranceCondition']", "xpath:attributes"],
+        ["xpath=//form[@id='application-approve-preview-form']/div/div[13]/div[3]/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b561f8e1-8924-49d2-b472-708f9cc151ef",
+      "comment": "",
+      "command": "click",
+      "target": "id=common-conditions-checkbox",
+      "targets": [
+        ["id=common-conditions-checkbox", "id"],
+        ["css=#common-conditions-checkbox", "css:finder"],
+        ["xpath=//input[@id='common-conditions-checkbox']", "xpath:attributes"],
+        ["xpath=//form[@id='application-approve-preview-form']/div/div[13]/div[4]/div/label/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "833862d8-27f1-41b4-889b-efed2e7e4b55",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=0",
+      "targets": [
+        ["index=0"]
+      ],
+      "value": ""
+    }, {
+      "id": "465523a5-f1a8-4320-a999-688bbf9f0ae1",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2fe3c95-21bf-4fd6-8b6d-0e459c5de283",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=На главную",
+      "targets": [
+        ["linkText=На главную", "linkText"],
+        ["css=.success-actions > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'На главную')]", "xpath:link"],
+        ["xpath=//div[@id='contentbar']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/overview')])[2]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'На главную')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "070e13eb-2d7d-4ec0-9e90-ac0091a86256",
+      "comment": "",
+      "command": "click",
+      "target": "id=externaltraderoom-index",
+      "targets": [
+        ["id=externaltraderoom-index", "id"],
+        ["css=#externaltraderoom-index", "css:finder"],
+        ["xpath=//a[contains(text(),'Валюта')]", "xpath:link"],
+        ["xpath=//a[@id='externaltraderoom-index']", "xpath:attributes"],
+        ["xpath=//li[@id='externalTraderoom']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/currency/traderoom')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "60ac07f6-6711-4345-8a11-9a7bb1ebe96b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1b79477e-ca82-41a9-8652-cfcba948b1fd"]
+  }],
+  "urls": ["https://idemo.bspb.ru/auth?response_type=code&client_id=1&redirect_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fsuccess&prefetch_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fprefetch&force_new_session=true", "https://idemo.bspb.ru/"],
+  "plugins": []
+}
