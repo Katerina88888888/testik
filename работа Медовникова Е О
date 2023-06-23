@@ -1,0 +1,78 @@
+Практическая работа №4 Медовникова Екатерина Олеговна.
+
+-- Прописываем все JOIN-ы 
+
+SELECT * FROM employees
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id 
+JOIN contract ON contract.id = executor.contract_id
+JOIN customer ON customer.id = contract.customer_id
+
+Реализовать следующие запросы:
+
+--Найти информацию о всех контрактах, связанных с сотрудниками департамента «Logistic». Вывести: contract_id, employee_name
+
+SELECT contract.id AS number, employees.name  FROM employees
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id 
+JOIN contract ON contract.id = executor.contract_id
+JOIN customer ON customer.id = contract.customer_id
+WHERE department.name = 'Logistic'
+
+
+
+--Найти среднюю стоимость контрактов, заключенных сотрудников Ivan Ivanov. Вывести: среднее значение amount
+
+SELECT ROUND(AVG(contract.amount), 2) AS amount   FROM employees
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id
+JOIN contract ON contract.id = executor.contract_id
+WHERE employees.name LIKE  '%van Ivanov'
+
+
+--Найти самую часто встречающуюся локации среди всех заказчиков. Вывести: location, count
+
+SELECT COUNT(customer.id), customer.location   FROM employees
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id 
+JOIN contract ON contract.id = executor.contract_id
+JOIN customer ON customer.id = contract.customer_id
+GROUP BY customer.location
+ORDER BY customer.location 
+LIMIT 1
+
+
+
+--Найти контракты одинаковой стоимости. Вывести count, amount
+
+SELECT COUNT(contract.id),  contract.amount FROM employees 
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id 
+JOIN contract ON contract.id = executor.contract_id
+JOIN customer ON customer.id = contract.customer_id
+GROUP BY contract.amount 
+HAVING COUNT(contract.id) >1 
+
+
+
+--Найти заказчика с наименьшей средней стоимостью контрактов. Вывести customer_name, среднее значение amount
+SELECT customer_NAME  , ROUND(AVG(contract.amount), 2) AS  amount FROM employees
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id 
+JOIN contract ON contract.id = executor.contract_id
+JOIN customer ON customer.id = contract.customer_id
+GROUP BY customer_NAME
+ORDER BY AVG(contract.amount)
+LIMIT 1
+
+-- Найти отдел, заключивший контрактов на наибольшую сумму. Вывести: department_name, sum
+
+SELECT department.name AS otdel, sum(contract.amount)  FROM employees
+JOIN department ON department.id = employees.department_id  
+JOIN executor ON executor.tab_no = employees.id 
+JOIN contract ON contract.id = executor.contract_id
+JOIN customer ON customer.id = contract.customer_id
+GROUP BY department.name
+ORDER BY SUM(contract.amount)
+DESC
+LIMIT 1
